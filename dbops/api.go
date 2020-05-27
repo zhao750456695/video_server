@@ -4,8 +4,10 @@ import (
 	"database/sql"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/zhao750456695/video_server/defs"
+	"github.com/zhao750456695/video_server/utils"
 	"log"
 	_ "github.com/zhao750456695/video_server/defs"
+	
 )
 
 
@@ -54,5 +56,6 @@ func DeleteUser(loginName string, pwd string) error  {
 
 func AddNewVideo(aid int, name string) (*defs.VideoInfo, error) {
     // create uuid
+	vid, err :=
 
 }
