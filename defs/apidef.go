@@ -17,6 +17,11 @@ type VideoInfo struct {
 type Comments struct {
 	Id string
 	VideoId string
-	AuthorId int
+	Author string
 	Content string
+}
+
+type SimpleSession struct {
+	Username string //login name
+	TTL int64
 }
