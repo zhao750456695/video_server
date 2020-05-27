@@ -3,7 +3,9 @@ package dbops
 import (
 	"database/sql"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/zhao750456695/video_server/defs"
 	"log"
+	_ "github.com/zhao750456695/video_server/defs"
 )
 
 
@@ -50,6 +52,7 @@ func DeleteUser(loginName string, pwd string) error  {
 	return nil
 }
 
-func AddNewVideo(aid int, name string) () {
+func AddNewVideo(aid int, name string) (*defs.VideoInfo, error) {
+    // create uuid
 
 }
