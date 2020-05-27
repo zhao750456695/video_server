@@ -13,3 +13,10 @@ type VideoInfo struct {
 	Name string
 	DisplayCtime string
 }
+
+type Comments struct {
+	Id string
+	VideoId string
+	AuthorId int
+	Content string
+}
